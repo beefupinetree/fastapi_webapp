@@ -1,0 +1,12 @@
+[project]
+dependencies = [
+    "fastapi==0.55.1",
+    "uvicorn==0.11.3",
+    "pydantic==1.4",
+    "email-validator==1.1.1",
+]
+name = "fastapi-webapp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
