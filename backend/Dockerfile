@@ -12,6 +12,8 @@ RUN apt-get update \
 
 # install python dependencies
 RUN pip install --upgrade pip
+RUN pip uninstall psycopg2
+RUN pip install --upgrade wheel setuptools
 COPY ./requirements.txt /backend/requirements.txt
 RUN pip install -r requirements.txt
 

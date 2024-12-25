@@ -7,6 +7,7 @@ dependencies = [
     "databases[postgresql]==0.4.2",
     "SQLAlchemy==1.3.16",
     "alembic==1.4.2",
+    "psycopg2",
 ]
 name = "fastapi-webapp"
 version = "0.1.0"
