@@ -38,7 +38,7 @@ async def register_new_user(
         token_type="bearer",
     )
 
-    return UserPublic(**created_user.dict(), access_token=access_token)
+    return created_user.copy(update={"access_token": access_token})
 
 
 @router.post(
